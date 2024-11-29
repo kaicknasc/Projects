@@ -1,0 +1,100 @@
+:root {
+    --gray: #4c4a4f;
+    --black: #1b1b1b;
+    --white: #ffffff;
+    /* Colors mono */
+    --yelloWhite: #F2C879;
+    --orange: #F2911B;
+    --orangered: #F25C05;
+    --red: #D91604;
+    --redTwo: #D90404;
+    /* Colors hot */
+    --greenMillitary: #065902;
+    --green: #078C31;
+}
+
+/* Reset to page */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+}
+
+span {
+  color: var(--red);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Align */
+  background-color: var(--white);
+}
+
+.darkTheme button {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  font-size: 25px;
+}
+
+/* Section */
+
+#home a {
+  background: linear-gradient(90deg, var(--red) 100%, var(--redTwo) 50%);
+  color: var(--white);
+  font-weight: 550;
+  text-decoration: none;
+  padding: 10px;
+  width: 180px;
+  height: 45px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+
+#home ion-icon {
+  font-size: 20px;
+}
+
+#about {
+  padding: 150px;
+}
+
+#about a {
+  transition: 00.80s ease;
+  opacity: 70%;
+  color: var(--gray);
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+  width: 110px;
+}
+
+#about a:hover {
+  transform: translateY(10px);
+  opacity: 100%;
+  color: var(--black);
+}
+
+footer {
+
+}
+
+@media (max-width: 420px) {
+  header {
+    background-color: var(--black);
+  }
+}
+
+
